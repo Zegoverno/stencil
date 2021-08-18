@@ -7,13 +7,7 @@ import { Component, h } from '@stencil/core';
 export class AppRoot {
   render() {
     return (
-      <ion-app>
-        <ion-router useHash={false}>
-          <ion-route url="/" component="app-home" />
-          <ion-route url="/profile/:name" component="app-profile" />
-        </ion-router>
-        <ion-nav />
-      </ion-app>
+      <h1>Hi José</h1>
     );
   }
 }
