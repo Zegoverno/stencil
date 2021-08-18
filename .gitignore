@@ -5,6 +5,7 @@ www/
 *~
 *.sw[mnpcod]
 *.log
+*.lock
 *.tmp
 *.tmp.*
 log.txt
@@ -17,11 +18,10 @@ log.txt
 .sass-cache/
 .versions/
 node_modules/
+loader
 $RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
-
-.vercel

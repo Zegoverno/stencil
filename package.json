@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "app",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch",
+    "generate": "stencil generate",
+    "storybook": "start-storybook -p 6006 -s dist",
+    "story": "npm-run-all build storybook",
+    "build-storybook": "build-storybook -c ./.storybook -o ../public"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@ionic/core": "^5.3.2",
+    "@stencil/core": "^2.0.1",
+    "@storybook/html": "^6.3.7",
+    "@types/jest": "^26.0.24",
+    "@types/puppeteer": "^5.4.3",
+    "babel-loader": "^8.2.2",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^5.5.0",
+    "@storybook/addon-essentials": "^6.3.7",
+    "case": "^1.6.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
+}
